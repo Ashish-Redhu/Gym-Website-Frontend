@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness Center Website</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500&family=Baloo+Bhaijaan+2&family=Baloo+Da+2&family=Cedarville+Cursive&family=Hubballi&family=Lobster&family=Oxygen&family=Roboto:wght@400;500&family=Supermercado+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="container-fluid bg-black text-white">
+
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg bg-body-tertiary fs-5 sticky-top">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#"><img class="rounded-circle" src="/images/image9.png" alt="brand-logo" width="80" height="80"></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">About</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Services
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#section2">Weight Training</a></li>
+                      <li><a class="dropdown-item" href="#section1">Cardio</a></li>
+                      <li><a class="dropdown-item" href="#section2">Weight Training + Cardio</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#section3">Professional Athlete</a></li>
+                    </ul>
+                  </li>
+                  <button id="contactUsBtn" class="btn btn-outline-warning">Contact Us</button>
+                  <li class="nav-item position-relative start-100">
+                    <a class="nav-link disabled" aria-disabled="true">Many more coming soon.....</a>
+                  </li>
+
+                </ul>
+
+              </div>
+            </div>
+          </nav>
+
+<!-- ********************************************************************************* -->
+
+<div class="container-fluid text-center p-0">
+
+  <!-- Video Section with Card -->
+  <div class="row">
+
+      <!-- First Video Column -->
+      <div class="col-md-4">
+          <div class="video-container">
+              <video class="video" autoplay muted loop>
+                  <source src="/videos/vid1.mp4" type="video/mp4">
+                  Your browser does not support the video tag.
+              </video>
+          </div>
+      </div>
+
+      <!-- Card Column -->
+      <div class="container col-md-4">
+        <div class="row justify-content-center">
+
+            <!-- Card -->
+            <div class="col-md-12">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Join Today <h5 style="color: goldenrod;">$10/m</h5> till 30/11/23</h5>
+                        <p class="card-text text-center">Search for your city below.</p>
+                        <hr>
+                        <div class="input-group">
+                            <input type="text" id="cityInput" class="form-control" placeholder="Search">
+                            <button class="btn btn-outline-primary" type="button" id="searchButton" onclick="checkCity()">Search</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+      <!-- Second Video Column -->
+      <div class="col-md-4">
+          <div class="video-container">
+              <video class="video" autoplay muted loop>
+                  <source src="/videos/vid2.mp4" type="video/mp4">
+                  Your browser does not support the video tag.
+              </video>
+          </div>
+      </div>
+
+  </div>
+
+</div>
+
+<!-- ********************************************************************************* -->
+        <div class="container custom-container text-center">
+          <!-- Heading and paragraph -->
+          <h2>Redhu's Gym</h2>
+          <p>
+            "Welcome to Redhu Gym – Where Strength Meets Passion! Unleash your full potential and embark on a fitness journey like never before. Our state-of-the-art facilities, expert trainers, and vibrant community create the perfect environment for you to sculpt your body, elevate your energy, and conquer your fitness goals. Join Redhu Gym today, where every drop of sweat is a step towards a stronger, healthier, and more confident you. Your transformation begins here!"</p>
+          <!-- Two cards in the same row -->
+
+          <div class="container mt-5">
+            <div class="row">
+    
+                <!-- First Card -->
+                <div class="col-md-6 mb-4">
+                    <div class="card bg-warning">
+                        <img src="/images/image7.jpeg" class="card-img-top" alt="Image 1" height="400">
+                        <h3 class="card-text text-overlay position-absolute top-30 text-bg-warning">Premium Membership</h3>
+                        <div class="card-body">
+
+                            <p class="card-text">Offers additional benefits and features beyond what is included in a standard membership.</p>
+                            <hr>
+                            <a href="#" class="btn btn-primary" data-bs-toggle="collapse" data-bs-target="#collapse1">Learn More</a>
+                            <button class="btn btn-success float-end" id="enrollNowBtn1">Enroll Now ></button>
+                        </div>
+                        <div class="collapse" id="collapse1">
+                            <div class="card-body">
+                                <!-- Expanded content goes here -->
+                                Include access to premium equipment, specialized fitness classes, personal training sessions, spa facilities, nutrition consultations, and other exclusive amenities. Members with a premium membership often enjoy a more personalized and enhanced gym experience.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Second Card -->
+                <div class="col-md-6 mb-4">
+                    <div class="card bg-dark-subtle">
+                        <img src="/images/image8.jpeg" class="card-img-top" alt="Image 2" height="400">
+                        <h3 class="card-text text-overlay position-absolute top-30 text-bg-dark">Standard Membership</h3>
+                        <div class="card-body">
+
+                            <p class="card-text">Provides access to the gym's basic facilities and equipment. Includes a few more basic facilities. </p>
+                            <hr>
+                            <a href="#" class="btn btn-primary" data-bs-toggle="collapse" data-bs-target="#collapse2">Learn More</a>
+                            <button class="btn btn-success float-end" id="enrollNowBtn2">Enroll Now ></button>
+                        </div>
+                        <div class="collapse" id="collapse2">
+                            <div class="card-body">
+                                <!-- Expanded content goes here -->
+                                Members with a standard or basic membership often have access to the cardio and strength training areas, as well as general amenities such as locker rooms and showers. This membership may not include additional perks or specialized classes.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+            </div>
+        </div>
+          <!-- Another paragraph below the cards -->
+          <p>"Embrace the burn, conquer the struggle. In the gym, find strength in every challenge, and let the weights you lift be a testament to the power within. Your journey is a story of determination, and every drop of sweat is a page in your book of success. Rise, grind, and transform – because greatness is forged in the fire of your effort. Whether you're a fitness enthusiast or a beginner on the path to wellness."
+          "Gyms offer more than just a workout – they provide a sanctuary for self-improvement, a community for support, and a journey towards a healthier, happier you. Discover the joy of movement, the thrill of progress, and the resilience that comes with a dedicated fitness routine. Step into the world of gyms, where each drop of effort is an investment in your well-being. Unleash the potential within you and let the gym become your sanctuary of strength and vitality!"</p>
+      </div>
+
+<!-- ********************************************************************************** -->
+
+        <!-- Section with text and image : 1 -->
+        <div class="container mt-5" id="section1">
+          <div class="row custom-section">
+              <div class="col-md-6 mt-5">
+                  <h2>Cardio-Stations We Have: </h2>
+                  <li>Treadmills: A good alternate of ground running.</li>
+                  <li>Eliptical Traniers: Better for after training cardio.</li>
+                  <li>Stationary Bikes: For those who have knee problems.</li>
+                  <li>Stretching Area alo.</li>
+              </div>
+              <div class="col-md-6">
+                  <img src="/images/image4.jpg" class="img-fluid" alt="Your Image">
+              </div>
+          </div>
+  
+      </div>
+
+        <!-- Section with text and image : 2 -->
+      <div class="container mt-5" id="section2">
+          <div class="row custom-section">
+
+            <div class="col-md-6">
+              <img src="/images/image5.jpg" class="img-fluid" alt="Your Image">
+            </div>
+            <div class="col-md-6 mt-5">
+                  <h2>Strength Stations: </h2>
+                  <li>Cable Machines</li>
+                  <li>Dumbbell Area</li>
+                  <li>Kettlebell Station</li>
+                  <li>Medicine Ball Area</li>
+                  <li>" Private Areas for Personal Training sessions."</li>
+            </div>
+          </div>
+      </div>
+
+        <!-- Section with text and image : 3 -->
+        <div class="container mt-5" id="section3">
+          <div class="row custom-section">
+
+            <div class="col-md-6 mt-5">
+              <h2>For Equipped Powerlifters: </h2>
+              <li>Professional Deadlift Platform: Hard wooden platform</li>
+              <li>Squat Rack with Safety bars: With all safety measures</li>
+              <li>Equipped Benchpress Area: Lorem ipsum dolor sit amet.</li>
+              <li>Lorem, ipsum dolor: Lorem ipsum dolor sit amet consectetur.</li>
+  
+            </div>
+
+            <div class="col-md-6">
+              <img src="/images/image6.jpeg" class="img-fluid" alt="Your Image">
+            </div>
+
+          </div>
+      </div>
+
+<!-- ********************************************************************************* -->
+
+    <!-- Bottom Section -->
+    <div class="bottom-section">
+      <div class="container">
+          <div class="row">
+              <div class="col-md-4">
+                  <ul class="list-unstyled">
+                      <li><a href="#">Privacy Policy</a></li>
+                      <li><a href="#">Terms and Conditions</a></li>
+                      <li><a href="#">Investor Relations</a></li>
+                  </ul>
+              </div>
+              <div class="col-md-4 text-center">
+                  <a href="https://www.facebook.com/" class="social-link m-2"><i class="fa-brands fa-facebook-f fa-2xl"></i></a>
+                  <a href="https://www.instagram.com/" class="social-link m-2"><i class="fa-brands fa-instagram fa-2xl"></i></a>
+                  <a href="https://www.youtube.com/" class="social-link m-2"><i class="fa-brands fa-youtube fa-2xl"></i></a>
+                  <a href="https://twitter.com/i/flow/login?input_flow_data=%7B%22requested_variant%22%3A%22eyJsYW5nIjoiZW4ifQ%3D%3D%22%7D" class="social-link m-2"><i class="fa-brands fa-twitter fa-2xl"></i></a>
+              </div>
+              <div class="col-md-4 text-md-end">
+                  <p>&copy; 2023 Redhu's Gym. All Rights Reserved.</p>
+              </div>
+          </div>
+      </div>
+  </div>
+
+
+<!-- Contact Us Pop-up Form:  -->
+
+<div class="overlay" id="overlay">
+  <div class="popup-form text-black bg-dark text-white">
+      <span class="close-btn" onclick="closeForm()">×</span>
+      <h2>Contact Us</h2>
+      <!-- Your form fields go here -->
+      <form>
+          <div class="form-group p-2">
+              <label for="formGroupExampleInput">Name: </label>
+              <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Example input">
+          </div>
+          <div class="form-group p-2">
+              <label for="exampleInputEmail1">Email address: </label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                  placeholder="abc@gmail.com">
+              <small id="emailHelp" class="form-text text-white">We'll never share your email with anyone else.
+              </small>
+          </div>
+          <div class="form-group p-2">
+              <label for="exampleFormControlTextarea1">Queries: </label>
+              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
+                  placeholder="write your queries here....."></textarea>
+          </div>
+          <!-- Button centered horizontally -->
+          <div class="d-flex justify-content-center">
+              <button type="submit" class="btn btn-primary">Submit</button>
+          </div>
+      </form>
+  </div>
+</div>
+
+
+<!-- Enroll Now Form:  -->
+ <!-- Overlay and pop-up form -->
+ <div class="overlay1" id="overlay1">
+  <div class="popup-form1 bg-dark">
+      <span class="close-btn1 text-white" onclick="closeForm1()">×</span>
+      <h2>Enroll Now</h2>
+      <!-- Form for collecting user details -->
+      <form id="enrollmentForm1" class="p-3">
+        <div class="form-group m-2">
+          <label for="name1">Name: </label>
+          <input type="text" name="name1" class="form-control" id="name1" required>
+        </div>
+
+          <div class="form-group m-2">
+            <label for="exampleInputEmail1">Email: </label>
+            <input type="email" name="email1" class="form-control" id="email1" aria-describedby="emailHelp" placeholder="abc@gmail.com" required>
+            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+          </div>
+
+          <div class="form-group m-2">
+            <label for="address1">Address</label>
+            <input type="text" name="address1" class="form-control" id="address1" placeholder="1234 Main St" required>
+          </div>
+
+          <div class="form-group m-2">
+            <label for="trainingType1" class="form-label">Training Type: </label>
+            <select name="trainingType1" class="form-select" id="trainingType1" aria-label="Select an option" required>
+                <option selected>Select an option</option>
+                <option value="cardio1">Cardio</option>
+                <option value="strength1">Strength Training</option>
+                <option value="yoga1">Yoga</option>
+            </select>
+        </div>
+
+          <div class="d-flex justify-content-center m-2">
+          <button type="button" class="btn btn-success" onclick="submitForm1()">Submit</button>
+          </div>
+      </form>
+  </div>
+</div>
+
+<!-- Adding more things later. -->
+<div id="later">
+
+</div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
